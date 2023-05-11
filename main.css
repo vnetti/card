@@ -7,17 +7,22 @@
 }
 
 body {
+
+}
+
+.cards {
     height: 100vh;
-    background-color: #fff;
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3em;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    box-shadow: 0 2px 40px 2px rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 40px 2px rgba(0, 0, 0, .1);
     row-gap: 1em;
     max-width: 300px;
     background-color: #fff;
@@ -44,6 +49,7 @@ body {
 
 .card .poster .poster__item {
     position: absolute;
+    opacity: .4;
 }
 
 .card .poster .poster__item.poster__item_sale {
@@ -104,7 +110,7 @@ body {
 .card .card__rating span {
     font-size: 3em;
     color: #ffb901;
-    rotate: -5deg;
+    /*rotate: -5deg;*/
     margin-right: -.2em;
 }
 
@@ -112,7 +118,6 @@ body {
     padding: 1.3em;
     margin: 0 auto;
     border: none;
-    background: none;
     display: block;
     cursor: pointer;
     background-image: url('images/order.png');
