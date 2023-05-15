@@ -1,10 +1,10 @@
 export default function (card) {
 
   const sale = card.sale ?
-    '<img class="poster__item poster__item_sale" src="../images/sales.png" alt="sale">' : ''
+    '<img class="poster__item poster__item_sale" src="images/sales.png" alt="sale">' : ''
 
   const type = card.type[0] === 'blue-ray' ?
-    '<img class="poster__item poster__item_type" src="../images/type.png" alt="blu-ray 3d">' : ''
+    '<img class="poster__item poster__item_type" src="images/type.png" alt="blu-ray 3d">' : ''
 
   const priceWithSale = card.sale ?
     `<span class="card__price-item">
